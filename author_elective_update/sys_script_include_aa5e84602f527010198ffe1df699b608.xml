@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_58872_needit.GetRecordsSelected</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>GetRecordsSelected</name>
+        <script><![CDATA[var GetRecordsSelected = Class.create();
+GetRecordsSelected.prototype = {
+    getSelectedRecords: function() {
+        //         var array = [];
+        //         var selectedRecords = this.getParameter('sysparm_ids');
+        // 		var prompt = this.getParameter('sysparm_prompt');
+        //         var sysIds = selectedRecords.split(",");
+        //         var gr = new GlideRecord('x_58872_needit_configuration');
+        //         gr.addQuery('sys_id', 'IN', selectedRecords);
+        //         gr.query();
+        //         while (gr.next()) {
+        // 			alert("Inside while");
+        //             gr.u_string_description = "Updated desc";
+        // 			gr.update();
+        //         }
+        console.log("Inside Script")
+    },
+
+    type: 'GetRecordsSelected'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 10:15:19</sys_created_on>
+        <sys_id>aa5e84602f527010198ffe1df699b608</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>GetRecordsSelected</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_aa5e84602f527010198ffe1df699b608</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 11:03:57</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>4cdcaacbdb30af007d8cf22ebf961959</instance_id>
+        <instance_name>dev71714</instance_name>
+        <name>sys_script_include_aa5e84602f527010198ffe1df699b608</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_58872_needit.GetRecordsSelected&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;GetRecordsSelected&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var GetRecordsSelected = Class.create();
+GetRecordsSelected.prototype = {
+    getSelectedRecords: function() {
+        //         var array = [];
+        //         var selectedRecords = this.getParameter('sysparm_ids');
+        // 		var prompt = this.getParameter('sysparm_prompt');
+        //         var sysIds = selectedRecords.split(",");
+        //         var gr = new GlideRecord('x_58872_needit_configuration');
+        //         gr.addQuery('sys_id', 'IN', selectedRecords);
+        //         gr.query();
+        //         while (gr.next()) {
+        // 			alert("Inside while");
+        //             gr.u_string_description = "Updated desc";
+        // 			gr.update();
+        //         }
+        console.log("Inside Script")
+    },
+
+    type: 'GetRecordsSelected'
+};
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-27 10:15:19&lt;/sys_created_on&gt;&lt;sys_id&gt;aa5e84602f527010198ffe1df699b608&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;GetRecordsSelected&lt;/sys_name&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_aa5e84602f527010198ffe1df699b608&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-27 11:03:57&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-147354531</payload_hash>
+        <record_name>GetRecordsSelected</record_name>
+        <reverted_from/>
+        <source>70ceb39c2f9e3010198ffe1df699b63c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 11:03:57</sys_created_on>
+        <sys_id>cb0a5c682f527010198ffe1df699b601</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b8747d7cf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 11:03:57</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>070a5c6839527010abdb4e22a9914801</update_guid>
+        <update_guid_history>070a5c6839527010abdb4e22a9914801:-147354531,e979d468245270101c8721cda2fd7b4b:-2000133449,99599028fe52701024b0892bd174d4fb:849325719,5487dce4b352701028934993f28c2e07:-1250645498,00f65864de52701047f00208d1541ed1:788042830,7b639464705270107be76fc6eaa8574f:1422982921,24f21ce0a152701004e65eb9c0ad4086:-743702162,339258241f527010aa94240ef78a9d58:1670681812,f2ee8c601952701010ded28a61867491:-826104080</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-27 11:41:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>9156bf6533314e009a814525d08b6100</sys_id>
+        <sys_metadata>aa5e84602f527010198ffe1df699b608</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetRecordsSelected</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_include_aa5e84602f527010198ffe1df699b608</sys_update_name>
+        <sys_update_version display_value="sys_script_include_aa5e84602f527010198ffe1df699b608">cb0a5c682f527010198ffe1df699b601</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-27 11:41:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Configuration" max_length="40" name="x_58872_needit_configuration" sizeclass="3" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Game" max_length="40" name="u_choice_2" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element label="New Field Name" max_length="80" name="u_field_name_12" type="field_name"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Game type" max_length="40" name="u_game_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Indoor" sequence="0" value="indoor"/>
+                <element inactive_on_update="false" label="Outdoor" sequence="1" value="outdoor"/>
+            </choice>
+        </element>
+        <element label="Password" max_length="80" name="u_password" type="field_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Username" max_length="40" name="u_string_10" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="New String" max_length="40" name="u_string_11" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="New String" max_length="40" name="u_string_8" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="40" name="u_string_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Password" max_length="40" name="u_string_password" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="URL" max_length="40" name="u_string_url" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Username" max_length="40" name="u_string_username" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="URL" max_length="1024" name="u_url" type="url"/>
+        <element label="Username" max_length="80" name="u_username" type="field_name"/>
+    </element>
+</database>

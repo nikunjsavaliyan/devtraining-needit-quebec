@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Needit" max_length="40" name="x_58872_needit_needit" type="collection">
+    <element audit="true" extends="task" label="Needit" max_length="40" name="x_58872_needit_needit" sizeclass="4" type="collection">
         <element attributes="omit_sys_original=true" label="New Currency" max_length="20" name="u_currency_2" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="indoor" label="Game Type" max_length="40" name="u_game_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Indoor" sequence="0" value="indoor"/>
+                <element inactive_on_update="false" label="Outdoor" sequence="1" value="outdoor"/>
+            </choice>
+        </element>
         <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="it" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>

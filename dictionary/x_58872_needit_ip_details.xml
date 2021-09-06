@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="IP Details" max_length="40" name="x_58872_needit_ip_details" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="City" max_length="40" name="city" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Continent" max_length="40" name="continent" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Country" max_length="40" name="country" read_only="true" type="string"/>
+        <element label="IP" mandatory="true" max_length="40" name="ip" type="ip_addr"/>
+        <element attributes="edge_encryption_enabled=true" label="Latitude" max_length="40" name="latitude" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Longitude" max_length="40" name="longitude" read_only="true" type="string"/>
+        <element attributes="encode_utf8=false" default="1418e6c22f167010198ffe1df699b637" label="MID Server" max_length="32" name="midserver" reference="ecc_agent" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Region" max_length="40" name="region" read_only="true" type="string"/>
+        <element attributes="encode_utf8=false" default="1418e6c22f167010198ffe1df699b637" label="MID Server" max_length="32" name="u_reference_10" reference="ecc_agent" type="reference"/>
+        <index name="index">
+            <element name="midserver"/>
+        </index>
+        <index name="index2">
+            <element name="u_reference_10"/>
+        </index>
+    </element>
+</database>

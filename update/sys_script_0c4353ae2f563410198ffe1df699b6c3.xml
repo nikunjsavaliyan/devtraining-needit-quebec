@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_58872_needit_configuration</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Validate on insert or update.</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    var mypass = current.u_string_password;
+    var body;
+    var status;
+
+    try {
+        var ws = new sn_ws.RESTMessageV2();
+        mypass = mypass.getDecryptedValue();
+
+
+
+        ws.setEndpoint('http://10.0.9.141:5000/validate?username=' + current.u_string_username + "&password=" + mypass);
+
+        ws.setHttpMethod('get');
+
+        // 		ws.setMIDServer(current.mid_server.name);
+        ws.setMIDServer('My_Linux_Mid_Server_Nikunj1');
+        ws.setEccParameter('skip_sensor', 'true');
+
+        var response = ws.execute();
+        body = response.haveError() ? response.getErrorMessage() : response.getBody();
+		if(body == "Valid"){
+			gs.addInfoMessage("Valid User");
+		}else{
+			gs.addErrorMessage("Invalid User");
+		}
+        gs.info("Response: Status:" + response.getStatusCode() + " Username: " + current.u_string_username + " Password: " + mypass + " Body: " + body);
+        status = response.getStatusCode();
+    } catch (ex) {
+        gs.error("Exception" + ex);
+        current.setAbortAction(true);
+    }
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-03 05:49:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0c4353ae2f563410198ffe1df699b6c3</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Validate on insert or update.</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_0c4353ae2f563410198ffe1df699b6c3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-03 10:45:16</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=0c4353ae2f563410198ffe1df699b6c3"/>
+</record_update>
